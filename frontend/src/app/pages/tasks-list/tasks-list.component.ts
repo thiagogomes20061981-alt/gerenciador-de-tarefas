@@ -40,7 +40,7 @@ type Filter = 'all' | 'pending' | 'done';
       }
       <ul class="space-y-3">
         @for (task of tasks; track task.id) {
-          <app-task-item [task]="task" (toggle)="toggle($event)" (remove)="remove($event)" />
+          <app-task-item [task]="task" (toggleDone)="toggle($event)" (remove)="remove($event)" />
         }
       </ul>
     } @else {
