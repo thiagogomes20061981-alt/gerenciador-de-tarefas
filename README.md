@@ -78,3 +78,4 @@ git init && git add . && git commit -m "chore: estrutura inicial" && git branch 
 git checkout -b backend/api-tarefas      # ... commits ... PR para main
 git checkout -b frontend/spa-tarefas     # ... commits ... PR para main
 ```
+Autor : Thiago Gomes
