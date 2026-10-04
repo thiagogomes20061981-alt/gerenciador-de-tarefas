@@ -13,7 +13,7 @@ import { Task } from '../../../core/models/task.model';
           type="checkbox"
           class="mt-1 h-5 w-5 accent-indigo-600"
           [checked]="task().done"
-          (change)="toggle.emit(task())"
+          (change)="toggleDone.emit(task())"
           [attr.aria-label]="'Concluir ' + task().title"
         />
         <div>
@@ -35,6 +35,6 @@ import { Task } from '../../../core/models/task.model';
 })
 export class TaskItemComponent {
   readonly task = input.required<Task>();
-  readonly toggle = output<Task>();
+  readonly toggleDone = output<Task>();
   readonly remove = output<Task>();
 }
